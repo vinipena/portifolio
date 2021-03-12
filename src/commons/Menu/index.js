@@ -1,5 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
+import { FeatherIcon, GithubIcon } from '../../theme/Logos/svg';
 //import { MenuWrapper } from '../Menu/style/MenuWrapper';
 
 const links = [
@@ -21,23 +22,18 @@ const links = [
   },
 ];
 
-const MenuWrapper = Styled.nav`
-    background-color:whitesmoke;
-    width:100vw;
-    position:fixed;
-    bottom: 0;
-    //border: solid 1px black;
+const MenuWrapper = Styled.ul`
+    display: flex;
+    align-items: center;
     z-index:1;
-    }
-ul{
-    display:flex;
-    justify-content: space-around;
+    color: dodgerblue;
+    justify-content: space-around;  
 }
 li{
     list-style: none;
+    
 }
 a {
-    color: dodgerblue;
     padding: 10px;
     margin: 5px;
     text-decoration: none;
@@ -49,10 +45,10 @@ a {
 }
 `;
 
+
 export default function Menu() {
   return (
     <MenuWrapper>
-      <ul>
         {links.map(link => {
           return (
             <li key={link.url}>
@@ -61,8 +57,7 @@ export default function Menu() {
               </a>
             </li>
           );
-        })}
-      </ul>
+        })}      
     </MenuWrapper>
   );
 }

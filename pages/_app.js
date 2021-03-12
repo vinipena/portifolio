@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     background-size: auto 100vh;
     font-family: 'Ubuntu Mono', monospace;
     color: whitesmoke;
+    max-width: 100vw;
 }
 
 @media (min-width: 400px) {
@@ -25,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
   @media (min-width: 600px) {
     body {
       font-size: 22px;
+      overflow:
     }
   }
 `;
@@ -40,6 +42,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head> 
         <title>Vinipena - Portifólio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script src="https://kit.fontawesome.com/123d96df60.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Shadows+Into+Light+Two&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet"></link>
       </Head>

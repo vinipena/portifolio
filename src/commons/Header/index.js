@@ -1,9 +1,21 @@
 import styled from 'styled-components'
+import Capa from '../Capa';
+import Logo from '../Logo';
+import Menu from '../Menu';
 
- export const Header = styled.section`
-    height: 100vh;
+const HeaderWrapper = styled.nav`
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    background-color:whitesmoke;
+    border-radius:50px;
 `;
+
+export default function Header(){
+    return(
+        <HeaderWrapper>
+            <Logo/>
+            <Menu/>
+        </HeaderWrapper>
+    )
+}

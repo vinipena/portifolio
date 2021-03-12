@@ -24,9 +24,8 @@ const conteudo =[{
 
 const CardWrapper = Styled.div`
         display: grid;
-        grid-template-columns:  150px ;
-        align-items: center;
-        justify-content: center;   
+        grid-template-columns:  250px ;
+        align-items: right;
         margin: 0 auto;     
     }
     li{
@@ -41,14 +40,14 @@ const CardWrapper = Styled.div`
 `;
 CardWrapper.Body = Styled.div`
     display: block;
-    width: 250px;
+    width: auto
     height: 100%;
 
     padding: 5px;
-    border: 1px solid whitesmoke;
+    //border: 1px solid whitesmoke;
     border-radius: 8px; 
     background-color: rgba(0,32,255,0.2);
-    box-shadow: 0 0 5px white;
+    //box-shadow: 0 0 5px white;
     
 `;
 
@@ -70,14 +69,14 @@ CardWrapper.Title = Styled.h3`
 `;
 CardWrapper.Content = Styled.section`
     text-align:center;
-    height: 50%;
+    height: auto;
     margin:10px;
     text-align: left;
     background-color: rgba(245,245,255,0.1);
     border-radius: 8px;
     
     p{
-        font-size: 0.75em;
+        font-size:0.5em;
         text-align: left;
     }
 `;

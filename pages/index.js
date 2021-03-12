@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 import Capa from '../src/commons/Capa'
-import Card from '../src/commons/Card'
-import { Header } from '../src/commons/Header'
+
+import Contato from '../src/commons/Contato'
+import Header from '../src/commons/Header'
 import Menu from '../src/commons/Menu'
+import Portifolio from '../src/commons/Portifolio'
 import Sobre from '../src/commons/Sobre'
 import { Container } from '../src/foundation/Container'
-import { LogoList } from '../src/theme/Logos'
 
 
 
@@ -15,31 +16,26 @@ const Title = styled.h1`
 `
 
 export default function Home() {
-  return(/* <Container>
-    <Cabeçalho>  
+  return(/* 
+    <Container>
       <Capa/>
-    <Cabeçalho/>
-    <Menu/>
-    <Projetos/>
-    <Footer/>
-  </Container>*/
-  <div>
-    <Header id='home'>
+      <Cabeçalho>
+        <Logo/>  
+        <Menu/>
+      <Cabeçalho
+      <Projetos>
+        <Cards
+      <Projetos/>
+      <Footer>
+        <Icons/>
+      </Footer
+    </Container>*/
+    <Container>
       <Capa/>
-      <Menu/>
-    </Header>
-    <Container id= 'portifolio' >
-      <h2>Portifólio</h2>
-      <Card/>
+      <Header id='home'/>
+      <Portifolio id='portifolio' />
+      <Sobre id ='sobre'/>
+      <Contato id='contato'/>
     </Container>
-    <Container id='sobre'>
-    <h2>Sobre</h2>
-      <Sobre/>
-    </Container>
-    <Container id='contato'>
-    <h2>Contato</h2>
-         <LogoList/>
-    </Container>
-  </div>
   )
 }

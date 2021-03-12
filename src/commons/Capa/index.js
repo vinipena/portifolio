@@ -1,4 +1,13 @@
 import styled from'styled-components'
+import { FeatherIcon } from '../../theme/Logos/svg';
+
+const CapaWrapper = styled.div`
+    min-height: 90vh;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+`;
 
 const Titulo = styled.h1`
     color: whitesmoke;
@@ -8,18 +17,20 @@ const Titulo = styled.h1`
 `;
 const Subtitulo = styled.h3`
     color: silver;
-    font-style: italic;
     font-weight: lighter;
-    text-align: center;
     font-size: 1.2em;
     font-family: 'Shadows Into Light Two', cursive;
 `;
 
 export default function Capa(){
 return(
-    <>
-    <Titulo> Vinicius Pena </Titulo>
-    <Subtitulo> Frontend Developer </Subtitulo>
-    </>
+    <CapaWrapper>
+        <Titulo> 
+            Vinicius Pena
+        </Titulo>
+        <Subtitulo> 
+            Front-end Developer
+        </Subtitulo>
+    </CapaWrapper>
 )
 }
