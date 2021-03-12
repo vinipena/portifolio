@@ -1,8 +1,8 @@
 import Styled from'styled-components'
 
 const Svg = Styled.svg`
-  width: 100px;
-  height:100px;
+  width: 25px;
+  height:auto;
   color: whitesmoke;
   &:hover{
     color: lightgray;

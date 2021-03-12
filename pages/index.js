@@ -33,8 +33,8 @@ export default function Home() {
     <Container>
       <Capa/>
       <Header id='home'/>
-      <Portifolio id='portifolio' />
       <Sobre id ='sobre'/>
+      <Portifolio id='projetos' />
       <Contato id='contato'/>
     </Container>
   )

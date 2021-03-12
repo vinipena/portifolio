@@ -12,9 +12,11 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     background-image: url("../images/background-azul.gif");
-    background-size: auto 100vh;
+    background-size: auto;
     font-family: 'Ubuntu Mono', monospace;
     color: whitesmoke;
+    
+    min-width: 100%;
     max-width: 100vw;
 }
 

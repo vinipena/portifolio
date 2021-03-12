@@ -9,16 +9,12 @@ const links = [
     url:' #home',
   },
   {
-    texto: 'Portifólio',
-    url: '#portifolio',
-  },
-  {
-    texto: 'Sobre',
+    texto: 'Sobre Mim',
     url: '#sobre',
   },
   {
-    texto: 'Contato',
-    url: '#contato',
+    texto: 'Projetos',
+    url: '#projetos',
   },
 ];
 
@@ -27,7 +23,7 @@ const MenuWrapper = Styled.ul`
     align-items: center;
     z-index:1;
     color: dodgerblue;
-    justify-content: space-around;  
+    justify-content: space-around;
 }
 li{
     list-style: none;

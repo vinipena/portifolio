@@ -1,30 +1,17 @@
-import Styled from 'styled-components';
+import styled from 'styled-components';
 import { GithubIcon,TwitterIcon, LinkedinbIcon,EmailIcon } from './svg'
 
 
-const Logos =Styled.ul`
+const Logos =styled.ul`
    list-style: none;
-   padding: 25px;
-    
-@media (min-width: 300px){
- 
-    display: grid;
-    grid-template-columns:  150px ;
-    align-items: center;
-    justify-content: center;
-    
+   display: flex;
+   align-items: center;;
+   width:100%;
+   justify-content: space-around;
   }
-  @media (min-width: 700px){
-    display: grid;
-    grid-template-columns: repeat(4 , 200px );
-    align-items: center;
-    justify-content: center;
+  li{
+    margin-top: 5px;
   }
-  a{
-	  text-decoration: none;
- 
-  }
-
 `;
 
 export function LogoList(){

@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Capa from '../Capa';
 import Logo from '../Logo';
 import Menu from '../Menu';
 
@@ -8,7 +7,7 @@ const HeaderWrapper = styled.nav`
     justify-content: space-around;
     align-items: center;
     background-color:whitesmoke;
-    border-radius:50px;
+    border-radius:25px;
 `;
 
 export default function Header(){

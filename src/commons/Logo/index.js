@@ -9,7 +9,7 @@ const LogoWrapper = styled.div`
         text-align:center;
       }
       h4{
-        margin-left: 50px;
+        margin-left: 25px;
       }
 `;
 

@@ -2,7 +2,7 @@ import Styled from 'styled-components'
 
 const Apresentacao = Styled.p`
     color: white;
-    text-indent: 1.4em;
+    text-indent: 1em;
     margin-bottom: 25px;
     text-align: justify;
     padding:15px;
@@ -10,8 +10,8 @@ const Apresentacao = Styled.p`
 
 const Avatar = Styled.img`
     height: auto;
-    max-width: 300px;
-    margin:10px;
+    max-width: 200px;
+
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     margin-left: 2em;
    
