@@ -6,7 +6,7 @@ import { FeatherIcon, GithubIcon } from '../../theme/Logos/svg';
 const links = [
   {
     texto: 'Home',
-    url:' #home',
+    url:'#home',
   },
   {
     texto: 'Sobre Mim',
@@ -24,20 +24,30 @@ const MenuWrapper = Styled.ul`
     z-index:1;
     color: dodgerblue;
     justify-content: space-around;
-}
-li{
-    list-style: none;
+    text-align: center; 
     
 }
+@media (min-width: 600px){
+         width:70%;
+     }
+li{
+    list-style: none;
+    text-align:center;    
+}
 a {
-    padding: 10px;
+    font-size:1rem;
+    
     margin: 5px;
+    text-align:center;
     text-decoration: none;
     transition: text-shadow 1s;
     &:active,
     &:hover{
         text-shadow: 0 0 2px teal;
     }
+    @media (min-width: 600px){
+         font-size: 1.2rem;
+     }
 }
 `;
 
@@ -47,7 +57,7 @@ export default function Menu() {
     <MenuWrapper>
         {links.map(link => {
           return (
-            <li key={link.url}>
+            <li key={link.texto}>
               <a href={link.url}>
                 {link.texto}
               </a>

@@ -32,10 +32,10 @@ export default function Home() {
     </Container>*/
     <Container>
       <Capa/>
-      <Header id='home'/>
-      <Sobre id ='sobre'/>
-      <Portifolio id='projetos' />
-      <Contato id='contato'/>
+      <Header id="home"/>
+      <Sobre id="sobre"/>
+      <Portifolio id="projetos" />
+      <Contato/>
     </Container>
   )
 }

@@ -25,7 +25,6 @@ const conteudo =[{
 const CardWrapper = Styled.div`
         display: grid;
         grid-template-columns:  250px ;
-        align-items: right;
         margin: 0 auto;     
     }
     li{

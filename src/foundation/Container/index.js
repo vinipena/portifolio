@@ -1,7 +1,9 @@
 import Styled from 'styled-components'
 
 export const Container = Styled.div`
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
   h2{
   color: whitesmoke;
   margin-bottom: 2em;

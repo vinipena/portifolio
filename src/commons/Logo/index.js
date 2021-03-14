@@ -4,13 +4,23 @@ import { FeatherIcon } from '../../theme/Logos/svg';
 
 const LogoWrapper = styled.div`
     display:flex;  
-        color:dodgerblue;
-        justify-content:space-around;
-        text-align:center;
-      }
-      h4{
-        margin-left: 25px;
-      }
+    justify-content:center;
+    text-align:center;
+    color: dodgerblue;
+    
+  }
+   @media (min-width: 600px){
+         width:30%;
+     }
+  svg{
+    margin-left:5px;
+    height: 25px;
+    width: auto;
+
+  }
+  h4{
+    margin-left: 1em;
+  }
 `;
 
 export default function Logo(){

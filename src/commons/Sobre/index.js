@@ -1,5 +1,15 @@
 import Styled from 'styled-components'
 
+const SobreMimWrapper = Styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  }
+   @media (min-width: 600px){
+     display: block;
+   }
+`;
+
 const Apresentacao = Styled.p`
     color: white;
     text-indent: 1em;
@@ -23,18 +33,16 @@ const Avatar = Styled.img`
 
 export default function Sobre(){
     return(
-    <div>
+    <SobreMimWrapper>
       <h2>Sobre Mim</h2>
       <Avatar src='https://avatars.githubusercontent.com/u/30162376?s=460&u=994082445e46ad72f2c2de1ae04fd98f8571b770&v=4'/>
       <Apresentacao>
-        Me chamo Vinicius.  
-        <br/>
-        Estou estudando para me tornar um desevolvedor Front-end e para isso iniciei uma graduação em Eng. da Computação juntando isso com os cursos e formações da Alura acredito estar aprendendo o necessario para me tornar um profissional capacitado e competente.
-        <br/>
-        Este site foi construído durante a Imersão CSS da Alura.
-        <br/>
+        Olá, sou Vinicius! <br/>
+        No momento, curso Eng da Computação e tenho como objetivo me tornar um desenvolver front-end.
+        A graduação, somado aos cursos e especializações da Alura, acredito estar preparado para atuar como um profissional capacitado e competente.
+        Este site foi construído durante a Imersão CSS da Alura.<br/>
         Com o uso de Styled-Components, ReactJS e Next ele foi refeito! 
       </Apresentacao>
-    </div>
+    </SobreMimWrapper>
     )
 }

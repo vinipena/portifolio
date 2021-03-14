@@ -1,8 +1,7 @@
 import styled from'styled-components'
-import { FeatherIcon } from '../../theme/Logos/svg';
 
 const CapaWrapper = styled.div`
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     align-items:center;
     justify-content:center;
